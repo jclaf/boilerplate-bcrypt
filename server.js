@@ -15,12 +15,7 @@ const bcrypt = require('bcrypt');
 app.get('/', (req, res) => {
     res.send('Hello, world!');
 });
-  
-  // Démarre le serveur
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
-});
+
 //START_ASYNC -do not remove notes, place code between correct pair of notes.
 
 
