@@ -1,9 +1,8 @@
 'use strict';
 const express     = require('express');
 const bodyParser  = require('body-parser');
-const fccTesting  = require('./freeCodeCamp/fcctesting.js');
+const fccTesting = require('./freeCodeCamp/fcctesting.js');
 const bcrypt = require('bcrypt');
-
 const app         = express();
 fccTesting(app);
 const saltRounds = 12;
@@ -11,12 +10,10 @@ const myPlaintextPassword = 'sUperpassw0rd!';
 const someOtherPlaintextPassword = 'pass123';
 
 
-
-
 // Ajoute une route pour la racine
-app.get('/', (req, res) => {
-    res.send('Hello, world!');
-});
+// app.get('/', (req, res) => {
+//     res.send('Hello, world!');
+// });
 
 //START_ASYNC -do not remove notes, place code between correct pair of notes.
 
